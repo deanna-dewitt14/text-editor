@@ -19,11 +19,11 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: 'client/index.html',
+        template: './index.html',
         title: 'JATE'
       }), 
       new InjectManifest({
-        swSrc: 'client/src-sw.js'
+        swSrc: './src-sw.js'
       }),
       new WebpackPwaManifest({
         fingerprints: false,
